@@ -12,7 +12,7 @@ DSTREAM_NAME="clear-ali" # Name for this Downstream of Clear Linux
 KOJI_TAG="" # Koji Tag to be used by this Downstream
 KOJI_URL="" # Kojihub URL
 KOJI_TOPURL="" # Koji Top url (kojifiles)
-BUNDLES_REPO="" # Git repository Hosting the bundles definitions for this Downstream
+BUNDLES_REPO="https://github.com/qzheng527/clear-ali-bundles-repo" # Git repository Hosting the bundles definitions for this Downstream
 
 PUBLISHING_HOST="" # The hostname of the server to which Downstream artifacts will be published
 PUBLISHING_ROOT="/srv/pub" # The directory on the server where Downstream artifacts will be published
