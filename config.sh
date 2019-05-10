@@ -5,9 +5,9 @@
 
 DSTREAM_NAME="clear-ali" # Name for this Downstream of Clear Linux
 
-#CLR_PUBLIC_DL_URL="http://linux-ftp.sh.intel.com/pub/mirrors/clearlinux"
+CLR_PUBLIC_DL_URL="http://linux-ftp.sh.intel.com/pub/mirrors/clearlinux"
 # Infrastructure config
-#DSTREAM_DL_URL="http://10.239.85.65:8000/update/" # URL that will be used to host this Downstream artifacts (update, releases etc)
+DSTREAM_DL_URL="http://10.239.85.65:8000" # URL that will be used to host this Downstream artifacts (update, releases etc)
 
 KOJI_TAG="" # Koji Tag to be used by this Downstream
 KOJI_URL="" # Kojihub URL
@@ -25,9 +25,12 @@ BUILD_DIR="$HOME/${DSTREAM_NAME}/build"
 WORK_DIR="$HOME/${DSTREAM_NAME}/work"
 STAGING_DIR="$HOME/${DSTREAM_NAME}/release"
 
-#CLR_LATEST=27000
 
-CLR_BUNDLES="os-core os-core-update kernel-native bootloader" 
+#CLR_LATEST=29280
+
+CLR_BUNDLES="os-core os-core-update kernel-native bootloader \
+        editors openssh-server shells sysadmin-basic NetworkManager \
+	os-clr-on-clr containers-virt cloud-native-basic"
 
 
 # You can export custom environment variables (like proxy) bellow

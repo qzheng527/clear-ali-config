@@ -9,8 +9,15 @@
     "PartitionMountPoints" : [ { "disk" : "native.img", "partition" : 1, "mount" : "/boot" },
 			       { "disk" : "native.img", "partition" : 3, "mount" : "/" } ],
     "Version": "latest",
-    "Bundles": ["bootloader",
-                "kernel-native",
-                "os-core",
-                "os-core-update"]
+    "Bundles": [
+        "bootloader",
+        "editors",
+        "kernel-native",
+        "network-basic",
+        "os-core-update",
+        "os-core",
+        "openssh-server",
+        "sysadmin-basic",
+        "NetworkManager"
+    ]
 }
